@@ -14,16 +14,113 @@
      <link href="https: //fonts.googleapis.com/css2?family= Montserrat: семья = Монтсеррат: вес @ 500; 700 & display=swap" rel="stylesheet">
     <link rel="stylesheet" media="screen and (max-width: 1300px)" href="public/css/styles.css"><!--scss/base.css"-->
     <!--<script type="text/javascript">alert("Привет !!! Поздравляю ! ");</script>-->
-    <title>Lawyer</title>
+     <title>Lawyer</title>
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <div class="container header-container"> 
+        <div class="header-menu">
+          <article class="header-menu__logo">NEW VIEW</article>
+          <nav class="header-menu__navigation">
+            <ul class="header-menu__list">
+              <li class="header-menu__list-item">
+                <a class="header-menu__list__item-link" href="#">Главная</a>
+              </li>
+               <li class="header-menu__list-item">
+                <a class="header-menu__list__item-link" href="#">Услуги</a>
+              </li>
+               <li class="header-menu__list-item">
+                <a class="header-menu__list__item-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-menu__phone">
+            <img class="header-menu__img-phone" src="public/images/icon-phone.png">+ 12 12 892-23-98</div>
+        </div>
+        <div class="header-container__content">
+           <picture class="header-containe__content__filter-lawyer">
+              <!--<img class="header-containe__content__img-lawyer" src="images/lawyer.png">-->
+           </picture>
+           <article class="header-containe__content__block_design">
+              <h1>Оформимляем гражданство США</h1>
+              <div class="header-containe__content__buttons-h1">
+                 <button class="btn">
+                   <p class="text-btn">Нью-Йорк</p>
+                   <img class="location" src="public/images/locationtick.png" alt="location">
+                 </button>
+                 <button class="btn">
+                   <p class="text-btn">Джорджия</p>
+                   <img class="location" src="public/images/locationtick.png" alt="location">
+                 </button>
+                 <button class="btn">
+                    <p class="text-btn">Калифорния</p>
+                   <img class="location" src="public/images/locationtick.png" alt="location">
+                 </button>
+              </div>
+              <button class="choice">Сделать выбор</button>
+           </article>
+        </div>
+      </div>
+    </header>
     <main>
-       <noscript><div id="root"></div></noscript>
+       <section class="first-screen">
+          <div class="container first-screen__container">
+             <div class="first-screen-container__content">
+               <h2 class="first-screen-container__content-h2">Скорая юридическая помощь</h2>
+               <section class="first-screen__photo-buttons-text">
+                  <figure class="first-screen__photos">
+                    <img class="img img-pasport" src="public/images/girl-pasport.jpg" alt="girl with pasport">
+                    <img class="img img-twix" src="public/images/twix.jpg">
+                    <img class="img img-flag" src="public/images/rue78b8665077.jpg" alt="girl with flag">
+                    <img class="img img-family" src="images/happy-family.jpg" alt="happy family">
+                    <img class="img img-visa" src="public/images/My_US_Visa.png" alt="visa">
+                    <figcaption style="display: none;">for photos</figcaption>
+                  </figure>
+                  <div class="first-screen__common">
+                    <article class="first-screen__h3-text">
+                      <h3>Перечень услуг</h3>
+                      <p class="first-screen__text">Одна из лучших юридически мировых компаний  всегда к вашим услугам</p>
+                    </article>
+                    <div class="first-screen__buttons-container">
+                      <button class="first-screen__buttons btn-1">Иммигрционные и семейные вопросы</button>
+                      <button class="first-screen__buttons btn-2">
+                        <p class="text-btn-2">Получение гринкарты через инвестиции</p>
+                        <img class="first-screen__buttons__img-birds" src="public/images/ri-check-double-line.png" alt="birds">
+                      </button>
+                      <button class="first-screen__buttons btn-3">Продление виз и изменение статуса</button>
+                    </div>
+                  </div>
+               </section>
+             </div>
+         </div>
+       </section>
+       <section class="two-screen">
+         <div class="container two-screen__container">
+           <article class="two-screen__container-content">
+             <h2>Свяжиться с нами</h2>
+             <div class="two-screen__container-content__data">
+               <div class="data-phone">+12 12 892-23-98
+                 <img class="data-phone__img-phone" src="public/images/icon-phone.png">
+               </div>
+               <div class="data-email">
+                 <img class="email" src="public/images/material-symbols_mail-rounded.png">
+                 <p>hello@barbericon.io</p>
+               </div>
+             </div>
+           </article>
+         </div>
+       </section>
     </main>
-   <footer>
-     <noscript>в обычном проекте src="scrip.js/main.js", когда не в реакт и не локалхосте</noscript>
-     <script type="text/javascript" src="src/index.js"></script>
+   <footer class="footer">
+     <div class="container footer-container">
+       <div class="footer-container__content">
+          <article class="footer-container__content__logo">NEW VIEW</article>
+          <article class="footer-container__content__copy">2031 © Все права защищены</article>
+       </div>
+     </div>
+     <script type="text/javascript" src="public/script.js/main.js"></script>
    </footer>
+   <noscript><div id="root"></div></noscript>
   </body>
 </html>
+
