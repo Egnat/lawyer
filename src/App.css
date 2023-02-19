@@ -1,38 +1,443 @@
-.App {
+::-webkit-scrollbar {
+width:.1px;
+height:5px;
+pacity:.02
+}
+
+::-webkit-scrollbar-button {
+height:50px;
+background:#42e10e
+}
+
+::-webkit-scrollbar-track {
+background:#274dd7
+}
+
+::-webkit-scrollbar-track-piece {
+background:#e91e63
+}
+
+::-webkit-scrollbar-thumb {
+background:#fbe100;
+border-radius:10px;
+-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3)
+}
+
+section {
+  width: 1280px;
+  margin-top: 120px;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+h1 {
+  width: 501px;
+  margin-bottom: 50p;
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 105%;
+ /* or 79px */
+  color: #FFFFFF;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 114%;
+/* or 51px */
   text-align: center;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3 {
+  margin: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 114%;
+  /* or 34px */
+  text-align: center;
+  color: #000000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.header {
+  width: 1280px;
+  height: 844px;
+  background-image: url("../public/images/park.jpg" );
+  background-size: cover;
+  box-shadow:inset 1280px 844px rgba(0 0 0 / 70%);/*нужно делать так,
+  когда в, тонируемом элементе находятся ещё элементы, которые тонировать не надо*/
+}
+
+.header-container {
+  width: 1110px;
+  margin: 0 auto;
+  padding-top: 55px;
+}
+
+.header-container__park {
+  width: 1280px;
+  height: 844px;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  ine-height: 114%;
+}
+
+.header-menu__logo, .footer-container__content__logo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  line-height: 114%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.header-menu__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 16px;
+  margin-right: 308px;
+}
+
+.header-menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.header-menu__list-item {
+  padding-right: 35px;
+  list-style:none;
+}
+
+.header-menu__list__item-link {
+  color: #fff;
+  text-decoration-line: none;
+}
+
+.header-menu__phone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.header-menu__img-phone, .data-phone__img-phone { 
+  margin-right: 11px; 
+}
+
+.header-container__content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.header-containe__content__filter-lawyer {
+  width: 514px;
+  height: 728px;
+  margin-top: 33px;
+  margin-right:-83px;
+  background-image: url(../public/images/lawyer.png);
+  background-size: cover;
+  transform:matrix(-1,0,0,1,0,0);
+  filter: brightness(1.0);
+}
+
+.header-containe__content__block_design {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  margin-bottom: 146px;
+}
+
+.header-containe__content__buttons-h1 {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 50p;
+  gap: 6px;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 150px;
+  height: 52px;
+  padding: 14px 17px;
+  border: 1px solid #fff;
+  background-color: #0000;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 114%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.text-btn {}
+
+.location {
+ width: 24px;
+ height: 24px;
+ color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.choice {
+  width: 238px;
+  height: 67px;
+  border: 1px solid #000000;
+  background: linear-gradient(93.12deg, #F92D2D 0%, #FFC700 100%);
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 114%;
+/* identical to box height, or 17px */
+  color: #121111;
 }
+
+.first-screen-container__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.first-screen-container__content-h2 {
+  width: 529px;
+  color: #030303;
+}
+
+.first-screen__photo-buttons-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: cente;
+  width: 1110px;
+  margin-top: 90px;
+}
+
+.first-screen__photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 316px;
+  margin: 0;
+}
+
+.img-pasport {
+  width: 347px;
+  height: 176px;
+  border-radius: 7px;
+  filter: drop-shadow(0px 0px 20px rgba(240, 57, 57, 0.44));
+}
+
+.img-twix {
+  width: 178px;
+  height: 174px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 94px -39px #e7e11a;
+}
+
+.img-flag {
+  width: 157px;
+  height: 120px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 25px -6px rgb(17 77 213 / 75%);
+}
+
+.img-family {
+  width: 192px;
+  height:120px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 25px -6px rgb(79 255 7 / 72%);
+}
+
+.img-visa {
+  width: 156px;
+  height: 120px;
+  border-radius: 7px;
+  filter: drop-shadow(0px 0px 16px rgba(243, 22, 22, 0.43));
+}
+
+.first-screen__common {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*baseline*/
+  gap: 26px;
+}
+
+.first-screen__h3-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 35px;
+  gap: 13px;
+}
+
+.first-screen__text {
+  width: 292px;
+  margin: 0;
+  font-size: 17px;
+}
+
+.first-screen__buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 48px;
+  gap: 13px;
+}
+
+.first-screen__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  background-color: #fff;
+  color: black; 
+  cursor:pointer;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.btn-1, .btn-3 {
+  width: 526px;
+  height: 51px;
+  padding: 0 0 0 111px;
+}
+
+.btn-2 {
+  width: 526px;
+  height: 64px;
+  padding: 0 14px 0 111px;
+  background: linear-gradient(90.69deg, rgba(249, 45, 45, 0.75) 4.17%, rgba(255, 199, 0, 0.79) 99.99%, rgba(254, 183, 5, 0.68) 100%);
+  color: white;
+  webkit-transition: all 0.6s ease;
+  ransition: background-color 0.6s ease;
+  transition:opacity .4s ease;
+}
+
+btn-2:hover {
+  background: linear-gradient(90.69deg, rgba(249, 45, 45, 0.75) 4.17%, rgba(255, 199, 0, 0.79) 99.99%, rgba(254, 183, 5, 0.68) 100%);
+  color: white;
+  -webkit-transition: all 0.6s ease;
+}
+
+.text-btn-2 {margin: 0}
+
+.first-screen__buttons__img-birds {}
+
+.first-screen__buttons__img-birds:hover {}
+
+.two-screen {
+  width: 1280px;
+  height: 547px;
+  background-image: url("../public/images/ssha-brooklyn-bridge-nyu-york.jpg");
+  background-size: cover;
+  box-shadow:0 0 0 1280px rgba(0 0 0 / 83%) inset; /*нужно делать так,
+  когда в, тонируемом элементе находятся ещё элементы, которые тонировать не надо*/
+}
+
+.two-screen__container-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 384px;
+  padding-top: 200px;
+  gap: 30px;
+}
+
+.two-screen__container-content__data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.data-phone {
+  display: flex;flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 27p;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 114%;
+/* identical to box height, or 23px */
+  color: #FFFFFF;
+}
+
+.data-email {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 18px;
+  line-height: 114%;
+  color: white;
+}
+
+.email {margin-right: 10px;}
+
+.footer {
+  width: 1280px;
+  background-color: black;
+}
+
+.footer-container__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 311px;
+  height: 102px;
+}
+
+.footer-container__content__copy {
+  font-weight: 500;
+  line-height: 114%;
+/* identical to box height, or 16px */
+  color: #FFFFFF;
+
+}
+
+
+@media screen and (max-width: 1300px) {}

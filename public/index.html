@@ -1,43 +1,128 @@
+<!--в индекс цсс можно записывать копию кода с Арр цсс, вместо того, 
+чтобы создавать цсс/стайлес.цсс-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <link rel="icon" href="images/favicon.ico">
+     <!--<link rel="icon" type="image/png" href="images/america-flag.png">
+     <link rel="icon" type="image/png" href="images/faviconradioact.png">-->
+     <!--<link rel="stylesheet" type="text/css" href="public/App.css">--> <!--эта ссылка работает, когда не в реакте, не в локахосте. (public/Арр.css) или (css/styles.css), если создана папка цсс, или (index.css), стили с index.css тоже работают, но Арр.цсс их перебивает, если стили задавать в Арр и индекс.цсс лучше отключить, чтоб не прыгала страница при перезагрузке, . В локахосте можно эту ссылку не писать. css/styles.css можно сздавать, когда обычный проект, без сборки в реакте-->
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+     <!--эти ссылки взяты у А.Гаврилова, быстрее загрузка шрифтов-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https: //fonts.googleapis.com/css2?family= Montserrat: семья = Монтсеррат: вес @ 500; 700 & display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width: 1300px)" href="public/css/styles.css"><!--scss/base.css"-->
+    <!--<script type="text/javascript">alert("Привет !!! Поздравляю ! ");</script>-->
+    <title>Lawyer</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <header class="header">
+      <div class="container header-container"> 
+        <div class="header-menu">
+          <article class="header-menu__logo">NEW VIEW</article>
+          <nav class="header-menu__navigation">
+            <ul class="header-menu__list">
+              <li class="header-menu__list-item">
+                <a class="header-menu__list__item-link" href="#">Главная</a>
+              </li>
+               <li class="header-menu__list-item">
+                <a class="header-menu__list__item-link" href="#">Услуги</a>
+              </li>
+               <li class="header-menu__list-item">
+                <a class="header-menu__list__item-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-menu__phone"><img class="header-menu__img-phone" src="images/icon-phone.png">+ 12 12 892-23-98</div>
+        </div>
+        <div class="header-container__content">
+           <picture class="header-containe__content__filter-lawyer">
+              <!--<img class="header-containe__content__img-lawyer" src="images/lawyer.png">-->
+           </picture>
+           <article class="header-containe__content__block_design">
+              <h1>Оформимляем гражданство США</h1>
+              <div class="header-containe__content__buttons-h1">
+                 <button class="btn">
+                   <p class="text-btn">Нью-Йорк</p>
+                   <img class="location" src="images/locationtick.png" alt="location">
+                 </button>
+                 <button class="btn">
+                   <p class="text-btn">Джорджия</p>
+                   <img class="location" src="images/locationtick.png" alt="location">
+                 </button>
+                 <button class="btn">
+                    <p class="text-btn">Калифорния</p>
+                   <img class="location" src="images/locationtick.png" alt="location">
+                 </button>
+              </div>
+              <button class="choice">Сделать выбор</button>
+           </article>
+        </div>
+      </div>
+    </header>
+    <main>
+       <section class="first-screen">
+          <div class="container first-screen__container">
+             <div class="first-screen-container__content">
+               <h2 class="first-screen-container__content-h2">Скорая юридическая помощь</h2>
+               <section class="first-screen__photo-buttons-text">
+                  <figure class="first-screen__photos">
+                    <img class="img img-pasport" src="images/girl-pasport.jpg" alt="girl with pasport">
+                    <img class="img img-twix" src="images/twix.jpg">
+                    <img class="img img-flag" src="images/rue78b8665077.jpg" alt="girl with flag">
+                    <img class="img img-family" src="images/happy-family.jpg" alt="happy family">
+                    <img class="img img-visa" src="images/My_US_Visa.png" alt="visa">
+                    <figcaption style="display: none;">for photos</figcaption>
+                  </figure>
+                  <div class="first-screen__common">
+                    <article class="first-screen__h3-text">
+                      <h3>Перечень услуг</h3>
+                      <p class="first-screen__text">Одна из лучших юридически мировых компаний  всегда к вашим услугам</p>
+                    </article>
+                    <div class="first-screen__buttons-container">
+                      <button class="first-screen__buttons btn-1">Иммигрционные и семейные вопросы</button>
+                      <button class="first-screen__buttons btn-2">
+                        <p class="text-btn-2">Получение гринкарты через инвестиции</p>
+                        <img class="first-screen__buttons__img-birds" src="images/ri-check-double-line.png" alt="birds">
+                      </button>
+                      <button class="first-screen__buttons btn-3">Продление виз и изменение статуса</button>
+                    </div>
+                  </div>
+               </section>
+             </div>
+         </div>
+       </section>
+       <section class="two-screen">
+         <div class="container two-screen__container">
+           <article class="two-screen__container-content">
+             <h2>Свяжиться с нами</h2>
+             <div class="two-screen__container-content__data">
+               <div class="data-phone">+12 12 892-23-98
+                 <img class="data-phone__img-phone" src="images/icon-phone.png">
+               </div>
+               <div class="data-email">
+                 <img class="email" src="images/material-symbols_mail-rounded.png">
+                 <p>hello@barbericon.io</p>
+               </div>
+             </div>
+           </article>
+         </div>
+       </section>
+    </main>
+   <footer class="footer">
+     <div class="container footer-container">
+       <div class="footer-container__content">
+          <article class="footer-container__content__logo">NEW VIEW</article>
+          <article class="footer-container__content__copy">2031 © Все права защищены</article>
+       </div>
+     </div>
+     <script type="text/javascript" src="script.js/main.js"></script>
+   </footer>
+   <noscript><div id="root"></div></noscript>
   </body>
 </html>
