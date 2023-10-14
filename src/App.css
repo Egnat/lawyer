@@ -431,3 +431,19 @@ color:#FFF
 }
 
 @media screen and (max-width: 1300px) {}
+
+@media screen and (max-width:1024px) {
+  html { min-width:1024px; }
+}
+@media screen and (max-width: 800px) {
+  html { min-width:800px; }
+}
+@media screen and (max-width: 768px) {
+  html { min-width:768px; }
+}
+@media screen and (max-width: 4255px) {
+  html { min-width:425px; }
+}
+@media screen and (max-width: 375px) {
+  html { min-width:375px; }
+}
