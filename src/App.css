@@ -36,12 +36,13 @@ margin:0 auto
 h1 {
 width:501px;
 margin-bottom:50p;
-margin-bottom:0;
+argin-bottom:0;
 font-style:normal;
 font-weight:700;
 font-size:75px;
 line-height:105%;
-color:#FFF
+color:#FFF;
+margin: 0;
 }
 
 h2 {
@@ -86,7 +87,8 @@ width:1280p;
 height:844px;
 background-image:url(../public/images/park.jpg);
 background-size:cover;
-box-shadow:inset 1280px 844px rgba(0 0 0 / 70%)
+box-shadow:inset 1280px 844px rgba(0 0 0 / 70%);
+overflow: hidden;
 }
 
 .header-container {
@@ -163,18 +165,20 @@ margin-right:11px
 display:flex;
 justify-content:space-between;
 flex-direction:row-reverse;
-align-items:center
+align-items:center;
+margin-top: 33px;
 }
 
 .header-containe__content__filter-lawyer {
 width:574px;
 height:730px;
-margin-top:33px;
+margin-top:33p;
 margin-right:-44px;
 background-image:url(../public/images/Female-Lawyer-PNG-Image1.png);
 background-size:cover;
 transform:matrix(-1,0,0,1,0,0);
-filter:brightness(1.0)
+filter:brightness(1.0);
+/*order: 1;*/
 }
 
 .header-containe__content__block_design {
@@ -182,7 +186,7 @@ display:flex;
 flex-direction:column;
 align-items:flex-start;
 gap:50px;
-padding-bottom:246px
+padding-bottom:246p;
 }
 
 .header-containe__content__buttons-h1 {
