@@ -126,13 +126,14 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 height:16px;
-margin-right:308px
+margin-right:308p;
 }
 
 .header-menu__list {
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding: 0;
 margin:0;
 font-weight:500;
 font-size:14px
@@ -158,7 +159,7 @@ color:#fff
 }
 
 .header-menu__img-phone,.data-phone__img-phone {
-margin-right:11px
+margin-right:11px;
 }
 
 .header-container__content {
@@ -167,13 +168,14 @@ justify-content:space-between;
 flex-direction:row-reverse;
 align-items:center;
 margin-top: 33px;
+overflow: hidden;
 }
 
 .header-containe__content__filter-lawyer {
 width:574px;
 height:730px;
 margin-top:33p;
-margin-right:-44px;
+margin-right:-47px;
 background-image:url(../public/images/Female-Lawyer-PNG-Image1.png);
 background-size:cover;
 transform:matrix(-1,0,0,1,0,0);
